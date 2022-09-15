@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rayyantech.mostpopulartvshow.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_watchlistFragment"
+            app:destination="@id/watchlistFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_mostPopularTVShowFragment"
+            app:destination="@id/mostPopularTVShowFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.rayyantech.mostpopulartvshow.fragment.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_searchFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_searchFragment_to_mostPopularTVShowFragment"
+            app:destination="@id/mostPopularTVShowFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/watchlistFragment"
+        android:name="com.rayyantech.mostpopulartvshow.fragment.WatchlistFragment"
+        android:label="WatchlistFragment"
+        tools:layout="@layout/fragment_watchlist">
+
+        <action
+            android:id="@+id/action_watchlistFragment_to_HomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mostPopularTVShowFragment"
+        android:name="com.rayyantech.mostpopulartvshow.fragment.MostPopularTVShowFragment"
+        android:label="MostPopularTVShowFragment"
+        tools:layout="@layout/fragment_most_popular_t_v_show">
+
+        <action
+            android:id="@+id/action_mostPopularTVShowFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mostPopularTVShowFragment_to_searchFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right" />
+
+        <argument
+            android:name="mostPopularTVShowModel"
+            app:argType="com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel" />
+
+    </fragment>
+
+</navigation>

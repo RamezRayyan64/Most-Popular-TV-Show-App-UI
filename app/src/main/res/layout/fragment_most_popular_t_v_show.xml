@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isLoading"
+            type="Boolean" />
+
+        <variable
+            name="isViewDetailVisible"
+            type="Boolean" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        tools:context=".fragment.MostPopularTVShowFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/act_tvshow_detail_layout_tv_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{isViewDetailVisible ? View.VISIBLE : View.GONE, default = gone}">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/act_tvshow_detail_view_pager_tv_show_slider_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignBottom="@id/act_tvshow_detail_view_pager_tv_show_slider_images"
+                    android:background="@drawable/background_tv_show_slider_image" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/act_tvshow_detail_circle_indicator_tv_show_slider_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/act_tvshow_detail_view_pager_tv_show_slider_images"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    app:ci_drawable="@drawable/background_circle_indicator_round"
+                    app:ci_drawable_unselected="@drawable/background_blue_color"
+                    app:ci_height="@dimen/_3sdp"
+                    app:ci_width="@dimen/_3sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_tvshow_detail_view_pager_tv_show_slider_images"
+                    android:layout_marginTop="-80dp"
+                    android:padding="@dimen/_4sdp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/act_tvshow_detail_image_view_tv_show_poster"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:scaleType="centerCrop"
+                        app:riv_corner_radius="@dimen/_6sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/act_tvshow_detail_linear_layout_tv_show_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_toEndOf="@id/act_tvshow_detail_image_view_tv_show_poster"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_50sdp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_network"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_regular"
+                            android:textColor="@color/colorTextYellow"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_regular"
+                            android:textColor="@color/colorTextGreen"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_started_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ubuntu_regular"
+                            android:textColor="@color/colorTextSecondary"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/act_tvshow_detail_text_view_tv_show_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/act_tvshow_detail_image_view_tv_show_poster"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/ubuntu_regular"
+                        android:textColor="@color/colorTextIcon"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/act_tvshow_detail_text_view_read_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/act_tvshow_detail_text_view_tv_show_description"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:fontFamily="@font/ubuntu_medium"
+                        android:text="@string/read_more"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <View
+                        android:id="@+id/act_tv_show_detail_view_tv_show_more_detail_line_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_below="@id/act_tvshow_detail_text_view_read_more"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@color/colorTextIcon" />
+
+                    <LinearLayout
+                        android:id="@+id/act_tvshow_detail_linear_layout_tv_show_more_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/act_tv_show_detail_view_tv_show_more_detail_line_top"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_star" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/background_blue_color" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_genre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextIcon"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <View
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/background_blue_color" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/act_tvshow_detail_text_view_tv_show_runtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextIcon"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/act_tv_show_detail_view_tv_show_more_detail_line_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/act_tvshow_detail_linear_layout_tv_show_more_detail"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@color/colorTextIcon" />
+
+                    <LinearLayout
+                        android:id="@+id/act_tvshow_detail_layout_buttons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/act_tv_show_detail_view_tv_show_more_detail_line_bottom"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_4sdp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/act_tvshow_detail_button_website"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_buttons"
+                            android:backgroundTint="@color/colorAccent"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="@string/website"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/act_tvshow_detail_button_episodes"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_buttons"
+                            android:backgroundTint="@color/colorTextYellow"
+                            android:fontFamily="@font/ubuntu_medium"
+                            android:text="@string/episodes"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerInParent="true"
+                android:visibility="@{isLoading ? View.VISIBLE : View.GONE, default = gone}" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>

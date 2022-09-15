@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="tvShow"
+            type="com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp">
+
+        <View
+            android:id="@+id/layout_most_popular_tv_show_view_supporter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@id/layout_most_popular_tv_show_rounded_image_view_tv_show_poster" />
+
+        <View
+            android:id="@+id/layout_most_popular_tv_show_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/layout_most_popular_tv_show_layout_tv_show_detail"
+            android:layout_alignBottom="@id/layout_most_popular_tv_show_view_supporter"
+            android:background="@drawable/background_layout_most_popular_tv_show" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/layout_most_popular_tv_show_image_view_watchlist"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:visibility="gone"
+            android:layout_alignTop="@id/layout_most_popular_tv_show_view_background"
+            android:layout_alignEnd="@id/layout_most_popular_tv_show_view_background"
+            android:src="@drawable/ic_bookmark"
+            app:tint="@color/colorAccent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/layout_most_popular_tv_show_image_view_delete"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:visibility="gone"
+            android:layout_alignBottom="@id/layout_most_popular_tv_show_view_background"
+            android:layout_alignEnd="@id/layout_most_popular_tv_show_view_background"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/colorThemeExtra" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/layout_most_popular_tv_show_rounded_image_view_tv_show_poster"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:alpha="0"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/_4sdp" />
+
+        <LinearLayout
+            android:id="@+id/layout_most_popular_tv_show_layout_tv_show_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toEndOf="@id/layout_most_popular_tv_show_rounded_image_view_tv_show_poster"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_most_popular_tv_show_text_view_tv_show_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_most_popular_tv_show_text_view_tv_show_network"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/colorTextYellow"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_most_popular_tv_show_text_view_tv_show_started_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/layout_most_popular_tv_show_text_view_tv_show_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/colorTextGreen"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
