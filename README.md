@@ -2,13 +2,12 @@
 
 My favorite app TV Show App
 
-![image1](https://user-images.githubusercontent.com/107287484/190445994-4c19de05-71a5-4b33-88d7-cf3dd6967ca6.png)
-![image2](https://user-images.githubusercontent.com/107287484/190446053-a4a15059-5c67-4da1-8893-5b8206a82182.png)
-![image3](https://user-images.githubusercontent.com/107287484/190446064-cb148266-8ed8-496e-b36e-84582e424fb7.png)
-![image4](https://user-images.githubusercontent.com/107287484/190446073-e845f2a1-a462-49f3-9280-903c4560acde.png)
-![image5](https://user-images.githubusercontent.com/107287484/190446084-4382f797-0e64-4361-985c-5f2cf0a19a38.png)
-![image6](https://user-images.githubusercontent.com/107287484/190446098-ad69ecde-ebc3-4adc-9996-b0f1d26e1572.png)
-![image7](https://user-images.githubusercontent.com/107287484/190446112-d22b0387-b678-492b-9185-24f336a2ca0b.png)
+![image1](https://user-images.githubusercontent.com/107287484/190726425-3fdb68b6-0e8f-40be-bad0-be83eeea3083.png)
+![image2](https://user-images.githubusercontent.com/107287484/190726429-76bbabfd-a57c-4cbc-b661-63e40258fa11.png)
+![image3](https://user-images.githubusercontent.com/107287484/190726431-e0bc5dc2-9db3-46d0-a31c-2dad7dd6d451.png)
+![image4](https://user-images.githubusercontent.com/107287484/190726434-7c702df7-398d-4958-9877-5c8a64d67af8.png)
+![image5](https://user-images.githubusercontent.com/107287484/190726437-bd8a5c05-ae98-4915-a070-170d6987d4bd.png)
+![image6](https://user-images.githubusercontent.com/107287484/190726441-096a63b8-16a8-4ae7-92f5-c0abbf89cac2.png)
 
 ## Getting Started
 
