@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.activities;
+package com.example.rayyantech.mostpopulartvshow.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,15 +9,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.rayyantech.mostpopulartvshow.adapters.FragmentAdapter;
-import com.rayyantech.mostpopulartvshow.adapters.MostPopularTVShowAdapter;
-import com.rayyantech.mostpopulartvshow.databinding.ActivityHomeBinding;
-import com.rayyantech.mostpopulartvshow.fragment.HomeFragment;
-import com.rayyantech.mostpopulartvshow.fragment.SearchFragment;
-import com.rayyantech.mostpopulartvshow.fragment.WatchlistFragment;
-import com.rayyantech.mostpopulartvshow.helper.ApiClient;
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowsModel;
+import com.example.rayyantech.mostpopulartvshow.adapters.FragmentAdapter;
+import com.example.rayyantech.mostpopulartvshow.adapters.MostPopularTVShowAdapter;
+import com.example.rayyantech.mostpopulartvshow.databinding.ActivityHomeBinding;
+import com.example.rayyantech.mostpopulartvshow.fragment.HomeFragment;
+import com.example.rayyantech.mostpopulartvshow.fragment.SearchFragment;
+import com.example.rayyantech.mostpopulartvshow.fragment.WatchlistFragment;
+import com.example.rayyantech.mostpopulartvshow.helper.ApiClient;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowsModel;
 
 import java.util.ArrayList;
 import java.util.List;

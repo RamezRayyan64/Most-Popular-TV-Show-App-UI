@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow;
+package com.example.rayyantech.mostpopulartvshow;
 
 import org.junit.Test;
 

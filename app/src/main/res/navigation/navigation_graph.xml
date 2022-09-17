@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.rayyantech.mostpopulartvshow.fragment.HomeFragment"
+        android:name="com.example.rayyantech.mostpopulartvshow.fragment.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
 
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.rayyantech.mostpopulartvshow.fragment.SearchFragment"
+        android:name="com.example.rayyantech.mostpopulartvshow.fragment.SearchFragment"
         android:label="SearchFragment"
         tools:layout="@layout/fragment_search">
 
@@ -53,7 +53,7 @@
 
     <fragment
         android:id="@+id/watchlistFragment"
-        android:name="com.rayyantech.mostpopulartvshow.fragment.WatchlistFragment"
+        android:name="com.example.rayyantech.mostpopulartvshow.fragment.WatchlistFragment"
         android:label="WatchlistFragment"
         tools:layout="@layout/fragment_watchlist">
 
@@ -67,7 +67,7 @@
 
     <fragment
         android:id="@+id/mostPopularTVShowFragment"
-        android:name="com.rayyantech.mostpopulartvshow.fragment.MostPopularTVShowFragment"
+        android:name="com.example.rayyantech.mostpopulartvshow.fragment.MostPopularTVShowFragment"
         android:label="MostPopularTVShowFragment"
         tools:layout="@layout/fragment_most_popular_t_v_show">
 
@@ -85,7 +85,7 @@
 
         <argument
             android:name="mostPopularTVShowModel"
-            app:argType="com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel" />
+            app:argType="com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel" />
 
     </fragment>
 

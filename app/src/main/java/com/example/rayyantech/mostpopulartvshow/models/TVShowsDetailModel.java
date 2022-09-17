@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.models;
+package com.example.rayyantech.mostpopulartvshow.models;
 
 import com.google.gson.annotations.SerializedName;
 

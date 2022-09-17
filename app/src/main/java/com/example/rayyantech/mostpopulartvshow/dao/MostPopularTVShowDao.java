@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.dao;
+package com.example.rayyantech.mostpopulartvshow.dao;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.helper;
+package com.example.rayyantech.mostpopulartvshow.helper;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

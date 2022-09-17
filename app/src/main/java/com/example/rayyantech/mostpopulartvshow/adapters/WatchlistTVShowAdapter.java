@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.adapters;
+package com.example.rayyantech.mostpopulartvshow.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,9 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.makeramen.roundedimageview.RoundedImageView;
-import com.rayyantech.mostpopulartvshow.R;
-import com.rayyantech.mostpopulartvshow.helper.WatchlistListener;
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.R;
+import com.example.rayyantech.mostpopulartvshow.helper.WatchlistListener;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
 
 import java.util.List;
 

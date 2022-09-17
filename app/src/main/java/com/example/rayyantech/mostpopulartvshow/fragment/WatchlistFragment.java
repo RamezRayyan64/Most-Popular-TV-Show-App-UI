@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.fragment;
+package com.example.rayyantech.mostpopulartvshow.fragment;
 
 import android.os.Bundle;
 
@@ -12,12 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.rayyantech.mostpopulartvshow.R;
-import com.rayyantech.mostpopulartvshow.adapters.WatchlistTVShowAdapter;
-import com.rayyantech.mostpopulartvshow.database.MostPopularTVShowDatabase;
-import com.rayyantech.mostpopulartvshow.databinding.FragmentWatchlistBinding;
-import com.rayyantech.mostpopulartvshow.helper.WatchlistListener;
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.R;
+import com.example.rayyantech.mostpopulartvshow.adapters.WatchlistTVShowAdapter;
+import com.example.rayyantech.mostpopulartvshow.database.MostPopularTVShowDatabase;
+import com.example.rayyantech.mostpopulartvshow.databinding.FragmentWatchlistBinding;
+import com.example.rayyantech.mostpopulartvshow.helper.WatchlistListener;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
 
 import java.util.ArrayList;
 import java.util.List;

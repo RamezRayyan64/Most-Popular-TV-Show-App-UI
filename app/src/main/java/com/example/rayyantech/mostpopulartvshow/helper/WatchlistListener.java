@@ -1,6 +1,6 @@
-package com.rayyantech.mostpopulartvshow.helper;
+package com.example.rayyantech.mostpopulartvshow.helper;
 
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
 
 public interface WatchlistListener {
 

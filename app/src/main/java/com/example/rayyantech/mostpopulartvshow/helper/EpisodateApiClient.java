@@ -1,8 +1,8 @@
-package com.rayyantech.mostpopulartvshow.helper;
+package com.example.rayyantech.mostpopulartvshow.helper;
 
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowsModel;
-import com.rayyantech.mostpopulartvshow.models.TVShowDetailModel;
-import com.rayyantech.mostpopulartvshow.models.TVShowsDetailModel;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowsModel;
+import com.example.rayyantech.mostpopulartvshow.models.TVShowDetailModel;
+import com.example.rayyantech.mostpopulartvshow.models.TVShowsDetailModel;
 
 import java.util.List;
 

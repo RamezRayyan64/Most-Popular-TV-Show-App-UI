@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.database;
+package com.example.rayyantech.mostpopulartvshow.database;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.rayyantech.mostpopulartvshow.dao.MostPopularTVShowDao;
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.dao.MostPopularTVShowDao;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
 
 @Database(entities = MostPopularTVShowModel.class, version = 1, exportSchema = false)
 public abstract class MostPopularTVShowDatabase extends RoomDatabase {

@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.fragment;
+package com.example.rayyantech.mostpopulartvshow.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -24,15 +24,15 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.rayyantech.mostpopulartvshow.R;
-import com.rayyantech.mostpopulartvshow.adapters.TVShowEpisodesAdapter;
-import com.rayyantech.mostpopulartvshow.adapters.TVShowSliderImageAdapter;
-import com.rayyantech.mostpopulartvshow.databinding.FragmentMostPopularTVShowBinding;
-import com.rayyantech.mostpopulartvshow.databinding.LayoutTvShowEpisodeBinding;
-import com.rayyantech.mostpopulartvshow.helper.ApiClient;
-import com.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
-import com.rayyantech.mostpopulartvshow.models.TVShowDetailModel;
-import com.rayyantech.mostpopulartvshow.models.TVShowsDetailModel;
+import com.example.rayyantech.mostpopulartvshow.R;
+import com.example.rayyantech.mostpopulartvshow.adapters.TVShowEpisodesAdapter;
+import com.example.rayyantech.mostpopulartvshow.adapters.TVShowSliderImageAdapter;
+import com.example.rayyantech.mostpopulartvshow.databinding.FragmentMostPopularTVShowBinding;
+import com.example.rayyantech.mostpopulartvshow.databinding.LayoutTvShowEpisodeBinding;
+import com.example.rayyantech.mostpopulartvshow.helper.ApiClient;
+import com.example.rayyantech.mostpopulartvshow.models.MostPopularTVShowModel;
+import com.example.rayyantech.mostpopulartvshow.models.TVShowDetailModel;
+import com.example.rayyantech.mostpopulartvshow.models.TVShowsDetailModel;
 
 import java.util.ArrayList;
 import java.util.List;

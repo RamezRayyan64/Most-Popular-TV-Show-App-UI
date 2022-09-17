@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.adapters;
+package com.example.rayyantech.mostpopulartvshow.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.rayyantech.mostpopulartvshow.R;
-import com.rayyantech.mostpopulartvshow.models.TVShowEpisodesModel;
+import com.example.rayyantech.mostpopulartvshow.R;
+import com.example.rayyantech.mostpopulartvshow.models.TVShowEpisodesModel;
 
 import java.util.List;
 

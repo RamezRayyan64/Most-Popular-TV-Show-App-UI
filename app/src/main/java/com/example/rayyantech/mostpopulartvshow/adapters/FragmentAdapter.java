@@ -1,4 +1,4 @@
-package com.rayyantech.mostpopulartvshow.adapters;
+package com.example.rayyantech.mostpopulartvshow.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
